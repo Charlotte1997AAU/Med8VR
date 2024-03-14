@@ -914,7 +914,6 @@ GameObject:
   m_Component:
   - component: {fileID: 935940901}
   - component: {fileID: 935940902}
-  - component: {fileID: 935940903}
   m_Layer: 0
   m_Name: Hand Visualizer
   m_TagString: Untagged
@@ -958,18 +957,6 @@ MonoBehaviour:
   m_DebugDrawJoints: 0
   m_VelocityPrefab: {fileID: 8538602047018081646, guid: 629fd7882ec6bfc499a5fcf20035282b, type: 3}
   m_VelocityType: 2
---- !u!114 &935940903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935940900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd65cb8a4b261f34a969e4b0a69791a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &944581974
 GameObject:
   m_ObjectHideFlags: 0
