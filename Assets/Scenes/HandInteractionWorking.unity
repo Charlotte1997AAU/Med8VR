@@ -1365,7 +1365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &171811174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5507,7 +5507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: 0.937
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5957,6 +5957,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2465297124121108064, guid: a8cc569f6e9255944ab93331c039f144, type: 3}
+      propertyPath: moveSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6697480764634237024, guid: a8cc569f6e9255944ab93331c039f144, type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -6028,6 +6032,18 @@ PrefabInstance:
     - target: {fileID: 6697480764634237024, guid: a8cc569f6e9255944ab93331c039f144, type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178737041733531529, guid: a8cc569f6e9255944ab93331c039f144, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178737041733531529, guid: a8cc569f6e9255944ab93331c039f144, type: 3}
+      propertyPath: moveSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178737041733531529, guid: a8cc569f6e9255944ab93331c039f144, type: 3}
+      propertyPath: startDelay
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8342295123698602404, guid: a8cc569f6e9255944ab93331c039f144, type: 3}
       propertyPath: m_Name
