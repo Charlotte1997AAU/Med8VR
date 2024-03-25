@@ -22,26 +22,20 @@ public class LightColorChange : MonoBehaviour
     }
 
     bool IsHitBySpecificLight()
+{
+    // Cast a ray straight along the Z-axis from the specific light
+    RaycastHit hit;
+    Vector3 raycastDirection = specificLight.transform.forward;
+    if (Physics.Raycast(specificLight.transform.position, raycastDirection, out hit))
     {
-        // Cast a ray from the specific light towards the object to detect if it hits it
-        RaycastHit hit;
-        Vector3 raycastDirection = transform.position - specificLight.transform.position;
-        if (Physics.Raycast(specificLight.transform.position, raycastDirection, out hit))
+        // Check if the hit object is the gameObject
+        if (hit.collider.gameObject == gameObject)
         {
-            // Visualize the ray
-            Debug.DrawRay(specificLight.transform.position, raycastDirection, Color.green);
-
-            // Check if the hit object is the gameObject
-            if (hit.collider.gameObject == gameObject)
-            {
-                Debug.Log("Hit by specific light!");
-                return true; // Return true if hit by the specific light source
-            }
+            Debug.Log("Hit by specific light!");
+            return true; // Return true if hit by the specific light source
         }
-
-        // Visualize the ray even if no hit occurs
-        Debug.DrawRay(specificLight.transform.position, raycastDirection, Color.red);
-
-        return false; // Return false if not hit by the specific light source
     }
+
+    return false; // Return false if not hit by the specific light source
+}
 }
