@@ -11,12 +11,10 @@ public class LightColorChange : MonoBehaviour
     {
         if (IsHitBySpecificLight())
         {
-            Debug.Log("Object is hit by specific light.");
             targetMaterial.color = litColor;
         }
         else
         {
-            Debug.Log("Object is not hit by specific light.");
             targetMaterial.color = normalColor;
         }
     }
@@ -31,7 +29,6 @@ public class LightColorChange : MonoBehaviour
         // Check if the hit object is the gameObject
         if (hit.collider.gameObject == gameObject)
         {
-            Debug.Log("Hit by specific light!");
             return true; // Return true if hit by the specific light source
         }
     }
