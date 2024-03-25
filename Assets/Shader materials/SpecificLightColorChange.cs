@@ -9,45 +9,39 @@ public class LightColorChange : MonoBehaviour
 
     void Update()
     {
-       RaycastHit hit;
-    Vector3 raycastDirection = specificLight.transform.position - transform.position; // Calculate the raycast direction
-
-    // Perform the raycast
-    if (Physics.Raycast(transform.position, raycastDirection, out hit))
-    {
-        Debug.DrawRay(transform.position, raycastDirection, Color.green); // Draw the ray for visualization
-        Debug.Log("Raycast direction: " + raycastDirection);
-
-        // Check if the hit object is the specific light source
-        if (hit.collider.GetComponent<Light>() == specificLight)
+        if (IsHitBySpecificLight())
         {
-            Debug.Log("Hit object is the specific light source!");
+            Debug.Log("Object is hit by specific light.");
             targetMaterial.color = litColor;
         }
         else
         {
-            Debug.Log("Hit object is not the specific light source.");
+            Debug.Log("Object is not hit by specific light.");
             targetMaterial.color = normalColor;
         }
-    }
     }
 
     bool IsHitBySpecificLight()
     {
-        // Cast a ray from the object to detect if it's hit by the specific light source
+        // Cast a ray from the specific light towards the object to detect if it hits it
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, specificLight.transform.forward, out hit))
+        Vector3 raycastDirection = transform.position - specificLight.transform.position;
+        if (Physics.Raycast(specificLight.transform.position, raycastDirection, out hit))
         {
-            // Check if the hit object is the specific light source
-            if (hit.collider.GetComponent<Light>() != null)
+            // Visualize the ray
+            Debug.DrawRay(specificLight.transform.position, raycastDirection, Color.green);
+
+            // Check if the hit object is the gameObject
+            if (hit.collider.gameObject == gameObject)
             {
-                Debug.Log("Hit object is a Light!");
-        Debug.Log("Hit object name: " + hit.collider.name);
-        Debug.Log("Specific light name: " + specificLight.name);
-                Debug.Log("HITHITHITHTIHTI");
+                Debug.Log("Hit by specific light!");
                 return true; // Return true if hit by the specific light source
             }
         }
+
+        // Visualize the ray even if no hit occurs
+        Debug.DrawRay(specificLight.transform.position, raycastDirection, Color.red);
+
         return false; // Return false if not hit by the specific light source
     }
 }
