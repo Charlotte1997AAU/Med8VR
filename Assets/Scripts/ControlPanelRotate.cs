@@ -15,6 +15,5 @@ public class RotateButton : MonoBehaviour
         }
         // Rotate the GameObject around its local y-axis at a constant speed
         //transform.Rotate(Vector3.down, rotationSpeed * Time.deltaTime);
-        Debug.Log("Rotation Angles: " + transform.rotation.eulerAngles);
     }
 }

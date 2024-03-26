@@ -47,12 +47,13 @@ public class LightController : MonoBehaviour
         // Check if the index is within bounds
         if (lightIndex >= 0 && lightIndex < lights.Length)
         {
+                    Debug.Log("Turned off light " + lightIndex);
             // Turn off the specified light
             lights[lightIndex].enabled = false;
         }
         else
         {
-            Debug.LogError("Invalid light index!");
+            Debug.LogError("Invalid light index! index: " + lightIndex);
         }
     }
 }
