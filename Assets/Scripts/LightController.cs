@@ -40,4 +40,19 @@ public class LightController : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
         }
     }
+
+    // Method to turn off a specific light based on its index
+    public void TurnOffLight(int lightIndex)
+    {
+        // Check if the index is within bounds
+        if (lightIndex >= 0 && lightIndex < lights.Length)
+        {
+            // Turn off the specified light
+            lights[lightIndex].enabled = false;
+        }
+        else
+        {
+            Debug.LogError("Invalid light index!");
+        }
+    }
 }
