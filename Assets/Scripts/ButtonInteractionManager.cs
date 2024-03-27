@@ -15,6 +15,11 @@ public class ButtonInteractionManager : MonoBehaviour
         Debug.Log("light number: " + number);
     }
 
+    public int GetSpecificNumber()
+    {
+        return specificNumber;
+    }
+
     // Function to read the specific number and turn off lights based on it
     public void ReadSpecificNumberAndTurnOffLight()
     {
