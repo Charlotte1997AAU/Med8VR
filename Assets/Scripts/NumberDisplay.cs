@@ -12,7 +12,7 @@ public class NumberDisplay : MonoBehaviour
         int specificNumberValue = buttonManager.GetSpecificNumber();
 
         // Update the TextMeshPro object with the specific number
-        int Numb = specificNumberValue++; 
+        int Numb = specificNumberValue+=1; 
         textObject.text = "Painting " + Numb;
     }
 }
