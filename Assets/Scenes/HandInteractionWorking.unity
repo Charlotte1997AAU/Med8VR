@@ -9244,9 +9244,9 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1547790947}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_TargetAssemblyTypeName: RotateToPosition, Assembly-CSharp
+        m_MethodName: RotateToForwardPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9691,8 +9691,8 @@ GameObject:
   - component: {fileID: 1547790943}
   - component: {fileID: 1547790946}
   - component: {fileID: 1547790945}
-  - component: {fileID: 1547790944}
   - component: {fileID: 1547790947}
+  - component: {fileID: 1547790948}
   m_Layer: 0
   m_Name: Interface
   m_TagString: Untagged
@@ -9722,27 +9722,6 @@ Transform:
   - {fileID: 1459650284}
   m_Father: {fileID: 1069771}
   m_LocalEulerAnglesHint: {x: 38, y: 0, z: 0}
---- !u!65 &1547790944
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547790942}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1547790945
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9805,7 +9784,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc21176bf6d336548b834e589453993d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 150
+  frontButtons:
+  - {fileID: 1937602551}
+  - {fileID: 1666841426}
+  - {fileID: 493931550}
+  - {fileID: 577792095}
+  - {fileID: 1814172466}
+  backButtons:
+  - {fileID: 1459650283}
+--- !u!114 &1547790948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547790942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9cfe3175905ad44a475bbec3fbdd1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateToPositionScript: {fileID: 0}
+  rotateToForward: 0
+  rotateToBackward: 0
 --- !u!4 &1548438690 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7887823656286205917, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
@@ -11211,13 +11212,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 1547790947}
+        m_TargetAssemblyTypeName: RotateToPosition, Assembly-CSharp
+        m_MethodName: RotateToBackwardPosition
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1764598519}
+        m_TargetAssemblyTypeName: ButtonInteractionManager, Assembly-CSharp
+        m_MethodName: ReadSpecificNumberAndTurnOffLight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
