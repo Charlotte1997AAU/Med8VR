@@ -13,7 +13,10 @@ public class RotateTabletOpposite : MonoBehaviour
             // Rotate the GameObject around its local y-axis at a constant speed
             transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
         }
-        // Rotate the GameObject around its local y-axis at a constant speed
-        //transform.Rotate(Vector3.down, rotationSpeed * Time.deltaTime);
+        
+        else
+        {
+            enabled = false;
+        }
     }
 }
