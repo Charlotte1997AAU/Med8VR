@@ -3648,7 +3648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5b91007fbfa3e4191464d5f0a8d155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceCalculator: {fileID: 0}
+  distanceCalculator: {fileID: 1864459788}
   textObject: {fileID: 541652765}
 --- !u!114 &541652765
 MonoBehaviour:
@@ -9283,7 +9283,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b55d2748ec30645a5e2f914a922611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableButtons: []
+  disableButtons:
+  - {fileID: 1937602551}
+  - {fileID: 1666841426}
+  - {fileID: 493931550}
+  - {fileID: 577792095}
+  - {fileID: 1814172466}
   rotationSpeed: 120
   targetAngle: 30
 --- !u!1 &1459650283
@@ -9985,7 +9990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547790942}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.9455186, y: 0, z: 0, w: 0.32556814}
+  m_LocalRotation: {x: 0.32556805, y: 0, z: 0, w: 0.9455186}
   m_LocalPosition: {x: 0, y: 0.007, z: 0.006}
   m_LocalScale: {x: 0.73676074, y: 0.014933104, z: 0.388003}
   m_ConstrainProportionsScale: 0
@@ -9998,7 +10003,7 @@ Transform:
   - {fileID: 1814172467}
   - {fileID: 1459650284}
   m_Father: {fileID: 1069771}
-  m_LocalEulerAnglesHint: {x: -142, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 38, y: 0, z: 0}
 --- !u!23 &1547790945
 MeshRenderer:
   m_ObjectHideFlags: 0
