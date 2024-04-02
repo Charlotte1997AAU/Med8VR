@@ -8897,6 +8897,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f72d057127a0394a992eab40b9f9f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disableButtons:
+  - {fileID: 1937602551}
+  - {fileID: 1666841426}
+  - {fileID: 493931550}
+  - {fileID: 577792095}
+  - {fileID: 1814172466}
   rotationSpeed: 120
   targetAngle: 180
   audioClip: {fileID: 8300000, guid: 9997f77b80fa2fa42bbc5b0503eb32fb, type: 3}
@@ -9008,6 +9014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b55d2748ec30645a5e2f914a922611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disableButtons: []
   rotationSpeed: 120
   targetAngle: 30
 --- !u!1 &1459650283
@@ -9709,7 +9716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547790942}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.32556805, y: 0, z: 0, w: 0.9455186}
+  m_LocalRotation: {x: -0.9455186, y: 0, z: 0, w: 0.32556814}
   m_LocalPosition: {x: 0, y: 0.007, z: 0.006}
   m_LocalScale: {x: 0.73676074, y: 0.014933104, z: 0.388003}
   m_ConstrainProportionsScale: 0
@@ -9722,7 +9729,7 @@ Transform:
   - {fileID: 1814172467}
   - {fileID: 1459650284}
   m_Father: {fileID: 1069771}
-  m_LocalEulerAnglesHint: {x: 38, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -142, y: 0, z: 0}
 --- !u!23 &1547790945
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12177,7 +12184,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864459786}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb994218b4b696f468167306aef125b1, type: 3}
   m_Name: 
