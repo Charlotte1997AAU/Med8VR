@@ -8899,6 +8899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 120
   targetAngle: 180
+  audioClip: {fileID: 8300000, guid: 9997f77b80fa2fa42bbc5b0503eb32fb, type: 3}
 --- !u!82 &1447739305
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11215,6 +11216,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1764598519}
         m_TargetAssemblyTypeName: ButtonInteractionManager, Assembly-CSharp
         m_MethodName: ReadSpecificNumberAndTurnOffLight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1692922230}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

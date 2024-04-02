@@ -5,6 +5,9 @@ public class RotateTabletOpposite : MonoBehaviour
     // Rotation speed in degrees per second
     public float rotationSpeed = 20f;
     public float targetAngle = 30f;
+
+
+
     void Update()
     {
 
