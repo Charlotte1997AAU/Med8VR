@@ -130,9 +130,9 @@ MonoBehaviour:
     depthCompareFunction: 5
     enableWrite: 0
     stencilSettings:
-      overrideStencilState: 0
+      overrideStencilState: 1
       stencilReference: 0
-      stencilCompareFunction: 8
+      stencilCompareFunction: 0
       passOperation: 0
       failOperation: 0
       zFailOperation: 0
