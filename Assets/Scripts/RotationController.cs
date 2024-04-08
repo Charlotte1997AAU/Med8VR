@@ -9,6 +9,10 @@ public class RotationController : MonoBehaviour
 
     private bool previousRotateOn = false; // To keep track of the previous state of rotateOn
 
+    public void startRotation()
+    {
+        rotateOn = true;
+    }
     void Update()
     {
         // Check if rotateOn is true and rotators array is assigned
