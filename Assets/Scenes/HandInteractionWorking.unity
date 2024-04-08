@@ -2963,7 +2963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7009273754011757225, guid: 26c35160f2c45ee4398ba0f24ba44ea1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.43
+      value: 0.535
       objectReference: {fileID: 0}
     - target: {fileID: 7009273754011757225, guid: 26c35160f2c45ee4398ba0f24ba44ea1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2971,11 +2971,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7009273754011757225, guid: 26c35160f2c45ee4398ba0f24ba44ea1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.81
+      value: -0.159
       objectReference: {fileID: 0}
     - target: {fileID: 7009273754011757225, guid: 26c35160f2c45ee4398ba0f24ba44ea1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7009273754011757225, guid: 26c35160f2c45ee4398ba0f24ba44ea1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2983,7 +2983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7009273754011757225, guid: 26c35160f2c45ee4398ba0f24ba44ea1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7009273754011757225, guid: 26c35160f2c45ee4398ba0f24ba44ea1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2995,7 +2995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7009273754011757225, guid: 26c35160f2c45ee4398ba0f24ba44ea1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7009273754011757225, guid: 26c35160f2c45ee4398ba0f24ba44ea1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3007,7 +3007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7642082980351356947, guid: 26c35160f2c45ee4398ba0f24ba44ea1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6198,6 +6198,7 @@ MonoBehaviour:
   - {fileID: 994264951}
   - {fileID: 1501119171}
   - {fileID: 1564143658}
+  - {fileID: 794892710}
 --- !u!114 &773611907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10443,7 +10444,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214190989}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1a1042c6f6ea6c48ad27255e61082c8, type: 3}
   m_Name: 
@@ -14237,7 +14238,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1942279967}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
