@@ -7,8 +7,8 @@ public class RotateToPosition : MonoBehaviour
 {
     public GameObject[] frontButtons;
     public GameObject[] backButtons;
-    private float forwardRotation = -142f; // Set the forward rotation
-    private float backwardRotation = 38f; // Set the backward rotation
+    private float forwardRotation = -180f; // Set the forward rotation
+    private float backwardRotation = 0f; // Set the backward rotation
     private float rotationSpeed = 150f; // Set rotation speed
     private float bufferPeriod = 0.1f; // Set the buffer period in seconds
     private Quaternion forwardQuaternion; // Store forward rotation in Quaternion representation
