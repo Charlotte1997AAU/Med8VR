@@ -58,6 +58,7 @@ void CheckObjectsAndSwitchScene()
         Light lightComponent = obj.GetComponent<Light>();
         if (lightComponent != null && lightComponent.enabled)
         {
+            Debug.Log("light on: " + obj);
             anyLightEnabled = true;
             break; // Exit the loop as soon as an enabled light is found
         }
