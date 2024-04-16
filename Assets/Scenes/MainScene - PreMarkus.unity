@@ -150,12 +150,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10615175}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 20
+  rotationDuration: 5
 --- !u!64 &10615177
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7656,7 +7656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 20
+  rotationDuration: 1
 --- !u!64 &598959715
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7780,7 +7780,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f06b4491c275d334b9d41e39aa0c9288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightController: {fileID: 374666039}
 --- !u!114 &600271295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7928,12 +7927,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623092538}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 20
+  rotationDuration: 5
 --- !u!64 &623092540
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10944,12 +10943,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824264599}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 20
+  rotationDuration: 5
 --- !u!64 &824264601
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11413,7 +11412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f06b4491c275d334b9d41e39aa0c9288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightController: {fileID: 374666039}
 --- !u!82 &901135930
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15025,13 +15023,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a1042c6f6ea6c48ad27255e61082c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonInteractionManager: {fileID: 0}
   targetMaterial: {fileID: 2100000, guid: 92fd2e3c35b6e834fbd2429d95369e6c, type: 2}
   fadeSpeed: 0.5
-  objectsToCheck:
-  - {fileID: 2036227201}
-  - {fileID: 1146399098}
-  - {fileID: 1048620242}
-  - {fileID: 153522747}
 --- !u!64 &1214190992
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16014,12 +16008,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324337759}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 20
+  rotationDuration: 5
 --- !u!64 &1324337761
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18883,12 +18877,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509167326}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 20
+  rotationDuration: 5
 --- !u!64 &1509167328
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23368,7 +23362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 20
+  rotationDuration: 1
 --- !u!64 &1942279970
 MeshCollider:
   m_ObjectHideFlags: 0

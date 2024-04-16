@@ -1,9 +1,9 @@
-using System.Collections;
 using UnityEngine;
+using System.Collections;
 
 public class Rotator : MonoBehaviour
 {
-    public float rotationSpeed = 30.0f; // Public variable for rotation speed
+    public float rotationDuration = 1.0f; // Duration for each rotation in seconds
 
     private bool rotating = false; // Flag to control rotation
 
@@ -24,13 +24,15 @@ public class Rotator : MonoBehaviour
     {
         rotating = true;
         
-        // Calculate the rotation step based on rotation speed
-        float step = rotationSpeed * Time.deltaTime;
+        float elapsedTime = 0.0f;
+        Quaternion startRotation = transform.rotation;
 
         // Rotate gradually towards the target rotation
-        while (Quaternion.Angle(transform.rotation, targetRotation) > 0.1f)
+        while (elapsedTime < rotationDuration)
         {
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, step);
+            float t = Mathf.Clamp01(elapsedTime / rotationDuration);
+            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, t);
+            elapsedTime += Time.deltaTime;
             yield return null;
         }
 
