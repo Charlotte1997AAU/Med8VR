@@ -155,8 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 30
-  rotationController: {fileID: 0}
+  rotationDuration: 5
 --- !u!64 &10615177
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -420,7 +419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2130331530761912218, guid: d661f645c81f29b4aa596207971ae441, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: startRotation
+      value: StartRotation
       objectReference: {fileID: 0}
     - target: {fileID: 2130331530761912218, guid: d661f645c81f29b4aa596207971ae441, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -4898,8 +4897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 30
-  rotationController: {fileID: 0}
+  rotationDuration: 1
 --- !u!64 &598959715
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5171,8 +5169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 30
-  rotationController: {fileID: 0}
+  rotationDuration: 5
 --- !u!64 &623092540
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7550,8 +7547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 30
-  rotationController: {fileID: 0}
+  rotationDuration: 5
 --- !u!64 &824264601
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10140,7 +10136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10148,7 +10144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalRotation.z
@@ -10160,7 +10156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 2218496723442559053, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -10813,8 +10809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 30
-  rotationController: {fileID: 0}
+  rotationDuration: 5
 --- !u!64 &1324337761
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13193,8 +13188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 30
-  rotationController: {fileID: 0}
+  rotationDuration: 5
 --- !u!64 &1509167328
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15266,7 +15260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1942279968
 Transform:
   m_ObjectHideFlags: 0
@@ -15276,8 +15270,8 @@ Transform:
   m_GameObject: {fileID: 1942279967}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.013000011}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.036, y: 0.014, z: -0.013}
+  m_LocalScale: {x: 1.5294318, y: 0.92222, z: 0.92222}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1509167331}
@@ -15294,8 +15288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed57c4b2569ee2c48855df8b3a2ac5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 30
-  rotationController: {fileID: 0}
+  rotationDuration: 1
 --- !u!64 &1942279970
 MeshCollider:
   m_ObjectHideFlags: 0
