@@ -10,16 +10,16 @@ namespace UnityStandardAssets.Utility
     [RequireComponent(typeof(Text))]
     public class FPSCounter : MonoBehaviour
     {
-        const float fpsMeasurePeriod = 0.5f;
+        const float fpsMeasurePeriod = 1f;
         private int m_FpsAccumulator = 0;
         private float m_FpsNextPeriod = 0;
         private int m_CurrentFps;
         private double avg_fps;
-        const string display = "{0} FPS";
         private Text m_Text;
+        private string filePath;
 
         // File path for the output file
-        private string directory = Application.dataPath + "/TXTfiles/";
+
 
         private List<int> fpsList = new List<int>();
 
@@ -27,8 +27,9 @@ namespace UnityStandardAssets.Utility
         {
             m_FpsNextPeriod = Time.realtimeSinceStartup + fpsMeasurePeriod;
             m_Text = GetComponent<Text>();
-            
-            
+            string directory = Application.persistentDataPath + "/TXTfiles/";
+            string fileName = "fps" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".txt";
+            filePath = directory + fileName;
         }
 
         private void Update()
@@ -43,37 +44,28 @@ namespace UnityStandardAssets.Utility
                 //Debug.Log("current FPS: " + m_CurrentFps);
                 fpsList.Add(m_CurrentFps);                
             }
-            SaveToPlayerPrefs();
         }
 
         // Method to write FPS value to the text file
-        /*
-        private void WriteToFpsFile(int fps)
+        
+        private void WriteToFpsFile()
         {
-            string fileName = "fps" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".txt";
-            string filePath = directory + fileName;
+            avg_fps = fpsList.Average();
+            Debug.Log("avg fps: " + avg_fps);
 
             // Append the FPS value to the file
             using (StreamWriter writer = new StreamWriter(filePath, true))
             {
-                foreach (int fpsValue in fpsList){
-                    writer.WriteLine(fpsValue);
-                }
+                Debug.Log("written data");
+                writer.WriteLine(avg_fps); 
+                writer.WriteLine("Hello :3");   
             }
         }
-        */
+        
 
-        public void SaveToPlayerPrefs()
-        {
-            avg_fps = fpsList.Average();
-
-            int current_avg = (int)avg_fps;
-            PlayerPrefs.SetInt("avg FPS" + DateTime.Now.ToString("yyyyMMdd_HHmmss"), current_avg);
-        }
-
-         void OnApplicationQuit(){
-            Debug.Log("Avg FPS: " + avg_fps);
-            SaveToPlayerPrefs();
+        public void saveFps(){ 
+            Debug.Log("Saved data to " + filePath);         
+            WriteToFpsFile();
          }
     }
 }
