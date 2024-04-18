@@ -8,11 +8,9 @@ public class TextScanner : MonoBehaviour
     public class ColliderPair
     {
         public string pairName;
-        public Collider topCollider;
-        public Collider bottomCollider;
+        public Collider textCollider;
         public GameObject objectToEnable;
         [HideInInspector] public bool topCollision = false;
-        [HideInInspector] public bool bottomCollision = false;
     }
 
     public ColliderPair[] colliderPairs;
@@ -21,26 +19,19 @@ public class TextScanner : MonoBehaviour
     {
         foreach (ColliderPair pair in colliderPairs)
         {
-            if (other == pair.topCollider)
+            if (other == pair.textCollider)
             {
                 pair.topCollision = true;
                 beep.Play();
-                Debug.Log(pair.pairName + " Top collider hit!");
+                Debug.Log(pair.pairName + " Text collider hit!");
             }
-            else if (other == pair.bottomCollider)
-            {
-                pair.bottomCollision = true;
-                beep.Play();
-                Debug.Log(pair.pairName + " Bottom collider hit!");
-            }
-
             CheckCollisions(pair);
         }
     }
 
     private void CheckCollisions(ColliderPair pair)
     {
-        if (pair.topCollision && pair.bottomCollision)
+        if (pair.topCollision)
         {
             pair.objectToEnable.SetActive(true);
         }
