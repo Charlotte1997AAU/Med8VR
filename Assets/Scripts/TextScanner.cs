@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class TextScanner : MonoBehaviour
 {
+    public AudioSource beep;
     // Define a class to represent each pair of colliders and their corresponding game object
     [System.Serializable]
     public class ColliderPair
@@ -23,11 +24,13 @@ public class TextScanner : MonoBehaviour
             if (other == pair.topCollider)
             {
                 pair.topCollision = true;
+                beep.Play();
                 Debug.Log(pair.pairName + " Top collider hit!");
             }
             else if (other == pair.bottomCollider)
             {
                 pair.bottomCollision = true;
+                beep.Play();
                 Debug.Log(pair.pairName + " Bottom collider hit!");
             }
 
